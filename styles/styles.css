@@ -255,3 +255,6 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+main .section.image-desc-container{
+  background-color: rgb(145, 145, 197 / 20%);
+}
