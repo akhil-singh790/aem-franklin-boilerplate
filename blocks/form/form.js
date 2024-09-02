@@ -39,7 +39,7 @@ async function submitForm(form) {
   
   const payload = constructPayload(form);
   payload.timestamp = new Date().toJSON();
-  const resp = await fetch(`https://main--aem-franklin-boilerplate--akhil-singh790.hlx.page/example-form.json`, {
+  const resp = await fetch(`https://main--aem-franklin-boilerplate--akhil-singh790.hlx.page/example-form`, {
     method: 'POST',
     cache: 'no-cache',
     headers: {
@@ -47,6 +47,7 @@ async function submitForm(form) {
     },
     body: JSON.stringify({ data: payload }),
   });
+  debugger
   await resp.text();
   return payload;
 }
