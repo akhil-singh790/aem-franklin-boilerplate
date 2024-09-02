@@ -35,9 +35,11 @@ function constructPayload(form) {
 }
 
 async function submitForm(form) {
+  console.log("formAkhil", form);
+  
   const payload = constructPayload(form);
   payload.timestamp = new Date().toJSON();
-  const resp = await fetch(`https://form.aem.page/main--helix-website--adobe${form.dataset.action}`, {
+  const resp = await fetch(`https://main--aem-franklin-boilerplate--akhil-singh790.hlx.page/${form.dataset.action}`, {
     method: 'POST',
     cache: 'no-cache',
     headers: {
