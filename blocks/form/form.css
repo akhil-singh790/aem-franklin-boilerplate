@@ -1,33 +1,32 @@
 main .form {
-  background-color: var(--color-white);
-  padding: var(--spacing-s);
-  border-radius: var(--card-border-radius-l);
+  background-color: white;
+  padding: 10px;
+  border-radius: 20%;
   filter: var(--image-filter-drop-shadow-small);
-  border: solid 1px var(--bg-color-grey);
+  border: solid 1px grey;
 }
 
 main .form h2 {
-  padding: var(--spacing-s) 0;
-  font-size: var(--type-heading-l-lh);
+  padding: 10px 0;
+  font-size: 48px;
 }
 
 main .form h3 {
-  padding-top: var(--spacing-s);
-  font-size: var(--type-heading-m-size);
+  padding-top: 10px;
+  font-size: 36px;
 }
 
 main .form input,
 main .form textarea,
 main .form select {
-  border: solid 1px var(--bg-color-grey);
-  padding: var(--spacing-xxs) var(--spacing-xs);
+  border: solid 1px grey;
+  padding: 8px 16px;
   width: 100%;
   max-width: 50rem;
   box-sizing: border-box;
-  border-radius: var(--input-border-radius);
-  font-size: var(--type-body-s-size);
-  line-height: var(--type-body-s-lh);
-  font-family: var(--body-font-family);
+  border-radius: 10%;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 main .form textarea {
@@ -36,31 +35,31 @@ main .form textarea {
 
 main .form input:hover,
 main .form select:hover {
-  border-color: var(--color-font-grey);
+  border-color: rgb(239, 211, 211);
 }
 
 main .form label {
   display: block;
-  padding-bottom: var(--spacing-xxs);
+  padding-bottom: 8px;
   box-sizing: border-box;
-  font-size: var(--type-body-s-size);
-  line-height: var(--type-body-s-lh);
+  font-size: 16px;
+  line-height: 20px;
 }
 
 main .form label.required::after {
   content: "*";
-  color: var(--color-black);
-  padding-left: var(--spacing-xxxs);
+  color: black;
+  padding-left: 4px;
 }
 
 main .form .field-wrapper {
-  margin-bottom: var(--spacing-m);
+  margin-bottom: 12px;
 }
 
 main .form .form-checkbox-wrapper {
   display: flex;
   align-items: center;
-  margin: var(--spacing-xs) 0;
+  margin: 8px 0;
 }
 
 main .form .form-checkbox-wrapper input[type='checkbox'] {
@@ -76,7 +75,7 @@ main .form .form-checkbox-wrapper input[type='checkbox'] {
   position: relative;
   border: unset;
   padding: unset;
-  margin-right: var(--spacing-xxs);
+  margin-right: 4px;
   margin-left: 0;
 }
 
@@ -100,24 +99,20 @@ main .form .form-checkbox-wrapper input[type='checkbox']:checked::after {
 
 main .form .form-checkbox-wrapper label {
   display: block;
-  font-size: var(--type-body-xxs-size);
-  line-height: var(--type-body-xxs-lh);
+  font-size: 12px;
+  line-height: 14px;
   padding-bottom: 0;
 }
 
 main .form-legal-wrapper p {
-  font-size: var(--type-body-xxs-size);
-  line-height: var(--type-body-xxs-lh);
+  font-size: 12px;
+  line-height: 14px;
   font-style: italic;
-}
-
-main .form button {
-  font-family: var(--body-font-family);
 }
 
 @media screen and (min-width: 900px) {
   main .form {
-    padding: var(--spacing-ml);
+    padding: 16px;
   }
   
   main .form .field-wrapper {
